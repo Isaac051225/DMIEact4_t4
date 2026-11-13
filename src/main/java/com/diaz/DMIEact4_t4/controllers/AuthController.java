@@ -27,7 +27,7 @@ public class AuthController {
     private final JwtService jwtService;
     private final AuthenticationManager authenticationManager;
 
-    @PostMapping("/registro")
+    @PostMapping("/register")
     public ResponseEntity<?> register(@Valid @RequestBody RegisterRequestDTO request) {
         if (usuarioRepository.existsByEmail(request.getEmail())) {
             return ResponseEntity.badRequest()

@@ -1,0 +1,26 @@
+info:
+  name: 04 - Crear Escuela
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8088/api/escuelas
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Instituto Tecnológico",
+        "clave": "IT-001",
+        "direccion": "Av. Universidad 123"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpc2FhY0BnbWFpbC5jb20iLCJpYXQiOjE3OTQ1MzM0MTgsImV4cCI6MTc5NDYxOTgxOH0.WozqtLLLj94CyUln8YEvCLszS8b3DJotWunO1-g83D-CzzVssEcv9zFKjBQmNBj3bLWowylSuywx_pQbrLOSQA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

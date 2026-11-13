@@ -1,0 +1,25 @@
+info:
+  name: 05 - Listar Escuelas
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: http://localhost:8088/api/escuelas?page=0&size=5
+  params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "5"
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpc2FhY0BnbWFpbC5jb20iLCJpYXQiOjE3OTQ1MzM0MTgsImV4cCI6MTc5NDYxOTgxOH0.WozqtLLLj94CyUln8YEvCLszS8b3DJotWunO1-g83D-CzzVssEcv9zFKjBQmNBj3bLWowylSuywx_pQbrLOSQA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
