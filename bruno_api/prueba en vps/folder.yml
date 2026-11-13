@@ -1,0 +1,7 @@
+info:
+  name: prueba en vps
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

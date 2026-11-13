@@ -1,0 +1,26 @@
+info:
+  name: 04 - crear escuela
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://165.22.188.79:8088/api/escuelas
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "URSE",
+        "clave": "IT-002",
+        "direccion": "Santa rosa"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpc2FhY0BnbWFpbC5jb20iLCJpYXQiOjE3OTQ1NDM2MTYsImV4cCI6MTc5NDYzMDAxNn0.hMZt-dceKHePK2WqVBJv7yVL-7mM0iFaF6ykP1TdYY7WM4HEIa2i6X958xJ8R2JAo8gZCQyQfUnIAsGISBjhJQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

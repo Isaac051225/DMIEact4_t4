@@ -1,0 +1,24 @@
+info:
+  name: 02 - Register
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://165.22.188.79:8088/api/auth/register
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Isaac Diaz",
+        "email": "23160886@itoaxaca.edu.mx",
+        "password": "password123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
